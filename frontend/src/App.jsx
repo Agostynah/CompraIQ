@@ -178,13 +178,13 @@ export default function App() {
   });
 
   const [selectedBenefits, setSelectedBenefits] = useState(() => {
-    const saved = localStorage.getItem('compraiq_benefits');
+    const saved = localStorage.getItem('rebusq_benefits');
     if (!saved) return [];
     try {
       const parsed = JSON.parse(saved);
       // Migrate old format: { benefit: {...}, supermercado: '...' } → flat entries
       if (Array.isArray(parsed) && parsed.length > 0 && parsed[0].benefit) {
-        localStorage.removeItem('compraiq_benefits');
+        localStorage.removeItem('rebusq_benefits');
         return [];
       }
       // Only keep items that have the flat-entry shape
@@ -355,7 +355,7 @@ export default function App() {
 
   // Sync selectedBenefits → localStorage, simulated day, and carousel position
   React.useEffect(() => {
-    localStorage.setItem('compraiq_benefits', JSON.stringify(selectedBenefits));
+    localStorage.setItem('rebusq_benefits', JSON.stringify(selectedBenefits));
     if (selectedBenefits.length > 0) {
       const b = selectedBenefits[0];
       setSelectedDaySimulated(b.day);
@@ -696,7 +696,7 @@ export default function App() {
       {/* HEADER SECTION (70% Editorial Premium) */}
       <header style={{ padding: '2rem 1.5rem 1rem', borderBottom: '1px solid var(--border-color)' }}>
         <span style={{ fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent)', display: 'block', marginBottom: '0.5rem' }}>
-          CompraIQ
+          Rebusq
         </span>
         <h1 style={{ fontSize: '2.25rem', fontFamily: 'var(--font-serif)', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
           Planificá tu compra.

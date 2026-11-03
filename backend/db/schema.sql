@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS fact_prices (
 );
 
 -- ============================================================
--- PROMOTIONS LAYER (CompraIQ)
+-- PROMOTIONS LAYER (Rebusq)
 -- ============================================================
 CREATE TABLE IF NOT EXISTS promotions (
     id                    VARCHAR(64) PRIMARY KEY,

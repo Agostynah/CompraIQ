@@ -1,6 +1,6 @@
-# Apartado Técnico - CompraIQ 🛠️
+# Apartado Técnico - Rebusq 🛠️
 
-Este documento reúne la especificación técnica, arquitectura, estructura del proyecto, guías de inicio rápido y detalles de los algoritmos de backend y base de datos de CompraIQ.
+Este documento reúne la especificación técnica, arquitectura, estructura del proyecto, guías de inicio rápido y detalles de los algoritmos de backend y base de datos de Rebusq.
 
 ---
 
@@ -64,7 +64,7 @@ supermercado/
 │   └── src/
 │       ├── main.jsx      # Entrada React
 │       ├── App.jsx       # Componente principal de simulador, changuito y beneficios
-│       ├── index.css     # Estilos de marca CompraIQ (Premium Warm Aesthetic)
+│       ├── index.css     # Estilos de marca Rebusq (Premium Warm Aesthetic)
 │       └── App.css       # Estilos complementarios
 ├── docker-compose.yml    # Infraestructura MySQL, phpMyAdmin y Cron
 └── README.md
